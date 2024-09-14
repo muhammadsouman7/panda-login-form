@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+
+    <!-- bootstrap-css -->
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <!-- css-file -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="panda.css">
+</head>
+
+<body>
+    <div class="form-wrapper">
+        <div class="panda-container">
+            <div class="panda-head">
+                <div class="left-ear"></div>
+                <div class="right-ear"></div>
+                <div class="left-eye-back">
+                    <div class="left-eye"></div>
+                </div>
+                <div class="right-eye-back">
+                    <div class="right-eye"></div>
+                </div>
+                <div class="dimples">
+                    <div class="left-dimple"></div>
+                    <div class="right-dimple"></div>
+                </div>
+                <div class="nose">
+                    <div class="nose-left"></div>
+                    <div class="nose-right"></div>
+                </div>
+                <div class="mouth">
+                    <div class="mouth-left"></div>
+                    <div class="mouth-mid"></div>
+                    <div class="mouth-right"></div>
+                </div>
+            </div>
+            <div class="hands">
+                <div class="left-hand "></div>
+                <div class="right-hand "></div>
+            </div>
+        </div>
+        <div class="form-container col-lg-4 col-12 ">
+            <form method="post" id="login-form">
+                <div class="form-group email-field my-2">
+                    <label for="email"><i class="bi bi-envelope"></i><label>
+                        <input type="email" class="form-control" id="email" required="required" placeholder="Enter your email">
+                    </div>
+                        <div class="form-group password my-2">
+                            <button type="button" id="hidePassword">
+                            <i class="bi bi-eye-slash"></i>
+                        </button>
+                            <button type="button" id="showPassword">
+                            <i class="bi bi-eye"></i>
+                        </button>
+                            <input type="password" placeholder="Please enter the password" class="form-control" id="userPassword" required="required">
+                        </div>
+    
+                        <div class="form-group terms my-2 d-flex justify-content-between">
+                            <div class="remember-me d-flex">
+                </div>
+        </div>
+
+
+        <div class="form-group btn-container">
+            <button type="submit" class="col-12">
+                            Login to Account
+                        </button>
+        </div>
+        </div>
+        
+        <div class="feet">
+            <div class="left-foot">
+                <div class="left-dot"></div>
+                <div class="mid-dot"></div>
+                <div class="right-dot"></div>
+                <div class="center-area"></div>
+            </div>
+            <div class="right-foot">
+                <div class="left-dot"></div>
+                <div class="mid-dot"></div>
+                <div class="right-dot"></div>
+                <div class="center-area"></div>
+            </div>
+        </div>
+        </form>
+        <!-- End-Form -->
+    </div>
+
+    <script src="bootstrap.js"></script>
+    <script src="script.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        
+        $(document).ready(function() {
+            $("#hidePassword").hide();
+        });
+        $("#showPassword").click(function() {
+            $("#userPassword").get(0).type = "text";
+            $("#showPassword").hide();
+            $("#hidePassword").show();
+        });
+        $("#hidePassword").click(function() {
+            $("#userPassword").get(0).type = "password";
+            $("#hidePassword").hide();
+            $("#showPassword").show();
+        });
+    </script>
+</body>
+
+</html>

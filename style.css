@@ -1,0 +1,252 @@
+@font-face {
+    src: url("Roboto-Regular.ttf");
+    font-family: roboto;
+}
+
+* {
+    font-family: 'roboto';
+}
+
+body {
+    background-image: url("20252.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    cursor: url("icons8-cursor-48.png"), auto;
+}
+
+
+/* ======================= 
+    Reset-Password-Form 
+  ======================= */
+
+.form-section {
+    width: 100%;
+    height: 100vh;
+}
+
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 190px;
+}
+
+.form-container form h2,
+.form-container form strong {
+    color: rgba(0, 70, 189, 1);
+    text-transform: uppercase;
+}
+
+.form-container form {
+    box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.8);
+}
+
+.form-container form .title {
+    margin-top: 10px;
+}
+
+svg {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.svg-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.content-container {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.details h1 {
+    color: #fff;
+    font-size: 3rem;
+}
+
+.details p {
+    color: #fff;
+}
+
+@media only screen and (max-width: 992px) {
+    .details p {
+        color: #000000;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .details h1,
+    .details p {
+        color: #000000;
+    }
+}
+
+.img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    width: 350px;
+    margin: 50px;
+}
+
+.img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+form {
+    background-color: rgb(216, 230, 255);
+    border-radius: 20px;
+    padding: 40px;
+}
+
+.email-field,
+.name-field {
+    display: flex;
+    background-color: #fff;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.email-field label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.email-field label i {
+    font-size: 1.1rem;
+    padding: 0 10px;
+    padding-left: 15px;
+}
+
+.email-field input {
+    border: none;
+    outline: none;
+    width: 320px;
+    margin-left: 0;
+}
+
+@media screen and (max-width: 480px) {
+    .email-field input {
+        border: 1px solid orange;
+    }
+}
+
+.name-field:hover,
+.email-field:hover {
+    border: 2px solid rgba(0, 70, 189, 1);
+}
+
+.email-field input:focus {
+    /* border-color: transparent; */
+    outline: none;
+}
+
+.btn-container button {
+    background-image: linear-gradient(45deg, rgba(0, 70, 189, 1) 37%, rgba(138, 255, 248, 1) 100%);
+    padding: 10px 0;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    height: 50px;
+    border-radius: 5px;
+    margin: 10px 0;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    text-transform: capitalize;
+}
+
+.get-started p {
+    color: #000;
+    font-size: 0.85rem;
+}
+
+.get-started a {
+    color: rgba(0, 70, 189, 1);
+    text-decoration: none;
+}
+
+.get-started a:hover {
+    text-decoration: underline;
+}
+
+
+/* ======================= 
+        Login-Form 
+  ======================= */
+
+.password {
+    position: relative;
+}
+
+.password button {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: none;
+    background-color: transparent;
+    font-weight: lighter;
+}
+
+.password input {
+    height: 50px;
+}
+
+.password input:hover {
+    border: 2px solid rgba(0, 70, 189, 1);
+}
+
+.btn-sign-in button {
+    background-image: linear-gradient(45deg, rgba(0, 70, 189, 1) 37%, rgba(138, 255, 248, 1) 100%);
+    width: 100%;
+    padding: 10px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    height: 50px;
+    border-radius: 5px;
+    margin: 10px 0;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: lighter;
+}
+
+
+/* ======================= 
+        Sign-up-Form 
+  ======================= */
+
+.terms {
+    display: flex;
+    margin-left: 20px;
+}
+
+.terms input {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+.terms p a {
+    text-decoration: none;
+    color: rgba(0, 70, 189, 1);
+}
