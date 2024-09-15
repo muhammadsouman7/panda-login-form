@@ -119,6 +119,7 @@ form {
     background-color: #fff;
     height: 50px;
     border-radius: 5px;
+    overflow: hidden;
 }
 
 .email-field label {
@@ -136,14 +137,8 @@ form {
 .email-field input {
     border: none;
     outline: none;
-    width: 320px;
+    width: 310px;
     margin-left: 0;
-}
-
-@media screen and (max-width: 480px) {
-    .email-field input {
-        border: 1px solid orange;
-    }
 }
 
 .name-field:hover,
